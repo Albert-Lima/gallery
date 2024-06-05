@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/media_screen.css">
     <title>Garden Gallery</title>
 </head>
 <body>
     <div class="header_main_background">
-        <!--irá conter o slide automático de imagens no header-->
+        <div class="backgroundHeaderMainOne backgroundHeaderMain"></div>
+        <div class="backgroundHeaderMainTwo backgroundHeaderMain"></div>
+        <div class="backgroundHeaderMainThree backgroundHeaderMain"></div>
     </div>
     <header class="header_main">
         <section class="section1_headerMain">
@@ -16,9 +19,9 @@
                 GaGallery
             </h1>
             <nav>
-                <a href="#sobre">sobre</a>
-                <a href="#serviços">serviços</a>
-                <a href="#produtos">produtos</a>
+                <a href="#sobre" id="nav_about">sobre</a>
+                <a href="#serviços" id="nav_service">serviços</a>
+                <a href="#recentes" id="nav_products">recentes</a>
             </nav>
         </section>
         <section class="section2_headerMain">
@@ -98,6 +101,7 @@
             </div>
         </div>
     </section>
+
     <section class="section_servicos">
         <header>
             <h2>SERVIÇOS</h2>
@@ -112,7 +116,7 @@
                     incidunt molestiae.
                 </p>
             </div>
-            <div id="service_two" class="columns_servicos column_noselected"><!--cada div será adicionada um background em css-->
+            <div id="service_two" class="columns_servicos"><!--cada div será adicionada um background em css-->
                 <h3>SEÇÃO <br>DE PLANTAS</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur 
@@ -120,7 +124,7 @@
                     incidunt molestiae.
                 </p>
             </div>
-            <div id="service_three" class="columns_servicos column_noselected"><!--cada div será adicionada um background em css-->
+            <div id="service_three" class="columns_servicos"><!--cada div será adicionada um background em css-->
                 <h3>PAISAGISMO <br>ESTRUTURAL</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur 
@@ -128,7 +132,7 @@
                     incidunt molestiae.
                 </p>
             </div>
-            <div id="service_four" class="columns_servicos column_noselected"><!--cada div será adicionada um background em css-->
+            <div id="service_four" class="columns_servicos"><!--cada div será adicionada um background em css-->
                 <h3>JARDIM <br>PÚBLICO</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur
@@ -144,7 +148,7 @@
             <h2>testemunhos</h2>
         </header>
         <section class="container_testemunhos">
-            <div>
+            <div class="box_testemunhos">
                 <p>
                     "Estou absolutamente encantada com o serviço 
                     de jardinagem que recebi recentemente! Desde 
@@ -153,7 +157,7 @@
                 </p>
                 <span>ANA OLIVEIRA</span>
             </div>
-            <div>
+            <div class="box_testemunhos">
                 <p>
                     "O resultado final é simplesmente deslumbrante! 
                     Meu jardim foi transformado em um verdadeiro oásis 
@@ -196,11 +200,11 @@
         <span class="desc_recent_work">
             <div>
                 <span class="Title_desc">NOME</span>
-                <span class="parag_desc">Mariana Bitencourt</span>
+                <span class="parag_desc" id="nameDesc">Mariana Bitencourt</span>
             </div>
             <div>
                 <span class="Title_desc">LOCAL</span>
-                <span class="parag_desc">Patos de Minas</span>
+                <span class="parag_desc" id="cityDesc">Pato de Minas</span>
             </div>
         </span>
     </section>
@@ -226,25 +230,25 @@
             </div>
             <section class="section_footer_links">
                 <div>
-                    <h4>SUPORTE</h4>
-                    <nav>
+                    <h4 class="infoFooter">SUPORTE</h4>
+                    <nav class="navFooter">
                         <a href="#FAQ">FAQ</a>
                         <a href="#testemunhos">TESTEMUNHOS</a>
                         <a href="#customer">CUSTOMIZAR</a>
                     </nav>
                 </div>
                 <div>
-                    <h4>LINKS</h4>
-                    <nav>
+                    <h4 class="infoFooter">LINKS</h4>
+                    <nav class="navFooter">
                         <a href="#sobre">SOBRE</a>
                         <a href="#projetos">PROJETOS</a>
                     </nav>
                 </div>
                 <div>
-                    <h4>SERVIÇOS</h4>
-                    <nav>
+                    <h4 class="infoFooter">SERVIÇOS</h4>
+                    <nav class="navFooter">
                         <a href="#HOMEGARDEN">JARDIM RESIDENCIAL</a>
-                        <a href="#PLANTSECION">SEÇÃO DE PLANTAS</a>
+                        <a href="#PLANTSECTION">SEÇÃO DE PLANTAS</a>
                         <a href="#HARDSCAPING">PAISAGISMO ESTRUTURAL</a>
                         <a href="#PUBLICGARDEN">JARDIM PÚBLICO</a>
                     </nav>
@@ -254,5 +258,10 @@
         <span class="box_copyright">todos os direitos reservados &copy; Albert Lima 2024</span>
     </footer>
     <script src="public/script.js"></script>
+    <script src="public/carrousselHeader.js"></script>
+    <script src="public/nav_header.js"></script>
+    <script src="public/services_animations.js"></script>
+    <script src="public/carroussel_testemunhos.js"></script>
+    <script src="public/recent_works.js"></script>
 </body>
 </html>
