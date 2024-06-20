@@ -797,9 +797,15 @@ form button{
 
 
 /*responsividade*/
-@media (max-width: 1280px) {
+@media (min-width: 1480px){
     .container_title_value{
-        margin-top: -30px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1480px) {
+    .container_title_value{
+        margin-top: -50px;
         margin-bottom: 50px;
     }
     .columns_servicos{
@@ -826,7 +832,7 @@ form button{
         font-size: 40pt;
     }
 }
-@media (max-width: 1024px){
+@media (max-width: 1124px){
     .section2_headerMain h2{
         font-size: 50pt;
     }
@@ -889,7 +895,10 @@ form button{
         margin-top: 5px;
     }
 }
-@media (max-width: 960px){
+@media (max-width: 1060px){
+    .container_title_value div{
+        height: 5vh;
+    }
     .container_recentWork{
         width: 90%;
         overflow: scroll;
@@ -917,6 +926,9 @@ form button{
     }
 }
 @media (max-width: 900px){
+    .container_title_value div{
+        height: 6vh;
+    }
     .section1_headerMain{
         position: fixed;
         left: 5%;
@@ -960,6 +972,9 @@ form button{
     }
 }
 @media (max-width: 830px){
+    .container_title_value div{
+        height: 6vh;
+    }
     .columns_servicos h3, .columns_servicos p{
         display: none;
     }
